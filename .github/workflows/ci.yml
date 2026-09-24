@@ -1,0 +1,18 @@
+# SPDX-License-Identifier: Apache-2.0
+# REUSE lint（CONV-25）。本仓库没有代码与依赖，不需要依赖许可证扫描。
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  reuse:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: fsfe/reuse-action@v5

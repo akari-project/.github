@@ -1,0 +1,25 @@
+# SPDX-License-Identifier: Apache-2.0
+#
+# REUSE 登记（spec/02 CONV-25）。
+version = 1
+
+# 版权声明对全部文件生效，与文件头中的许可证标识合并。
+[[annotations]]
+path = "**"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "akari-project contributors"
+SPDX-License-Identifier = "Apache-2.0"
+
+# PR 模板的内容会原样进入每个 PR 的描述，不加注释头。
+[[annotations]]
+path = "PULL_REQUEST_TEMPLATE.md"
+precedence = "override"
+SPDX-FileCopyrightText = "akari-project contributors"
+SPDX-License-Identifier = "Apache-2.0"
+
+# Contributor Covenant 2.1 原文。
+[[annotations]]
+path = "CODE_OF_CONDUCT.md"
+precedence = "override"
+SPDX-FileCopyrightText = "Contributor Covenant contributors <https://www.contributor-covenant.org>"
+SPDX-License-Identifier = "CC-BY-4.0"
