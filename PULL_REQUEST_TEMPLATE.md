@@ -22,5 +22,5 @@
 - [ ] 代码、日志、测试数据与 PR 描述中不含令牌、密码、密钥或代理凭据（CONV-24）
 - [ ] 一次提交只改一个仓库；协议或接口变更已先在 `panel-spec` 合入（ARC-01、ARC-02）
 - [ ] node-agent：修改原有文件已登记到 `UPSTREAM.md`
-- [ ] 每个提交带 `Signed-off-by`（DCO，`git commit -s`）
+- [ ] 提交已 `--signoff`（DCO，spec/42 42.6）：每个提交带 `Signed-off-by`，用 `git commit -s`；漏签时 `git rebase --signoff <base>` 后强推
 - [ ] backlog 中该任务的状态已更新
